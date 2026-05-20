@@ -1,0 +1,22 @@
+html{
+    background-image: url("../image/images.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100vh;
+    margin: 0;
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    justify-content: center; 
+    text-align: center; 
+}
+a{
+    font-size: medium;
+    color: black;
+}

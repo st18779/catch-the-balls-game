@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> כניסה/הרשמה</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script defer src="../javaScript/index.js"></script>
+</head>
+<body>
+
+    <div id="container">
+        <div id="buttons">
+          <button id="login">כניסה</button>
+          <button id="register">הרשמה</button> 
+        </div><hr>
+        <form id="formLogin" class="form-wrapper active">
+          <label for="username">שם משתמש(אימייל):</label><br>
+          <input type="text" id="loginUsername" name="username" required><br>
+          <label for="password">סיסמה:</label><br>
+          <input type="password" id="loginPassword" name="password" required><br><br>
+          <input type="submit" value="היכנס" id="send">
+        </form>
+        <form id="formRegister" class="form-wrapper">
+          <label for="firstName">שם פרטי:</label><br>
+          <input type="text" id="registerFirstName" name="firstName" required><br>
+          <label for="lastName">שם משפחה:</label><br>
+          <input type="text" id="registerLastName" name="lastName"><br>
+          <label for="email">אימייל:</label><br>
+          <input type="email" id="registerEmail" name="email" required><br>
+          <label for="password">סיסמא:</label><br>
+          <input type="password" id="registerPassword" name="password" required><br>
+          <label for="checkPass">אימות סיסמא:</label><br>
+          <input type="password" id="registerCheckPass" name="checkPass" required><br><br>
+          <input type="submit" value="הרשם" id="send">
+        </form>
+      
+</body>
+</html>
+

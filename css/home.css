@@ -1,0 +1,126 @@
+html{
+    background-attachment: fixed;
+
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+   display: flex;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+    
+    
+}
+h1{
+    align-self:center;
+}
+
+.logo{
+    width:30rem;
+    height: 15rem;
+    margin: 0%;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+span {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.game-item{
+    float: right;
+    width: 13rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-size: 1.5625rem;
+    overflow: hidden;
+    justify-content: space-around;
+    flex-direction: column;
+    display: flex;
+    padding-left: 2%;
+    padding-right: 0.5%;
+}
+
+ .img{
+    width: 100%;
+    height: 13rem;
+    display: inline;
+    float: right;
+    margin: 0%;
+    transition: transform 0.3s ease;
+    gap: 5rem;
+    cursor: pointer; 
+    object-fit: cover;
+} 
+
+
+.button1{
+    width: 13rem;
+    height: 7%;
+    background-color: rgb(255, 0, 170);
+    color: rgb(248, 239, 239);
+    text-align: center;
+    padding: 6% 0;
+   justify-content: center;
+   display: flex;
+
+}
+.inOperation{
+    color: white; 
+    background-color: rgb(255, 0, 170);
+    text-align: center;
+    font-size:large;
+    justify-content: center;
+    border-style: none;
+}
+a{
+    text-decoration: none;
+     color: white; 
+     font-size: medium;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    #game-container {
+        grid-template-columns: repeat(2, 1fr);
+        display: inline;
+    }
+    .img{
+        width: 16rem;
+       
+    }
+    .button{
+        width: 16rem;
+    }
+  
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מבול הכדורים</title>
+    <link rel="stylesheet" href="../css/game.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script defer src="../javaScript/game1.js"></script>
+</head>
+<header>
+    <a id="kishur" href="../pages/toGame.html">להוראות המשחק</a>
+</header>
+<body >
+   
+    <audio id="background_music" src="../audio/Background_music.wav" loop></audio>
+    <form action="game.html" method="get" target="_self" >
+        <label for="name">שלום</label>
+        <input name="name" id="name" type="text" required readonly/><br/>
+        <label for="score">הניקוד שלך: </label>
+        <input name="score" id="score" type="number" readonly/><br/>
+        <label for="highScore">השיא שלך: </label>
+        <input name="highScore" id="highScore" type="number" readonly/><br/>
+        <label for="ballInBasket">סך הכדורים בסל: </label>
+        <input name="ballInBasket" id="ballInBasket" type="number" readonly /><br/>
+        <input name="ballLive" id="ballLive" type="text"  readonly/><br/>
+
+    </form>
+   
+    <div id="balls"> </div>
+    <img src="../image/basket.png" id="basket" alt="סל">
+    <div id="imageBoomContainer" >
+        <img id="imgBoom" src="../image/boom.png" >
+    </div>
+     <div id="gameOver" >
+        <img id="imgGameOver" src="../image/עיצוב ללא שם (9).gif" alt="game-over">
+    </div>
+
+    <div class="triangles">
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div> 
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>  
+        <div class="triangle"></div>  
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div> 
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+
+        
+        <!-- ***** במסך גדול להוסיף
+        <div class="triangle"></div> -->
+        <!-- <div class="triangle"></div>  -->          
+        <!-- <div class="triangle"></div> 
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>   --> 
+ 
+
+       
+    </div>
+    
+</body>
+</html>

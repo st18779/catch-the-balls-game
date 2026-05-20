@@ -1,0 +1,130 @@
+html{
+ 
+    background-image: url("../image/backGround.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100vh;
+    margin: 0;
+  }
+body {
+    margin: 0;
+} 
+header{
+    
+    font-size: 30px;
+    color: black;
+    margin-bottom: 500px;
+
+}
+.ball {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    top: 10px;
+    position: absolute;
+    animation: fall 4s linear 1  both;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),inset 5px 5px 10px rgba(0, 0, 0, 0.173);
+}
+@keyframes fall{
+    to{
+        top: calc(100vh - 60px)
+    }
+}
+#basket{
+    width: 150px; 
+    height: 90px; 
+    position: absolute; 
+    bottom: 0px;
+    left: calc(50% - 75px); 
+    z-index: 20; 
+ 
+}
+.triangles {
+    display: flex;
+    width: 100%;
+    margin-top: auto;
+}
+    
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 60px solid rgb(83, 83, 83);
+}
+#gameOver{
+    display: none;
+    position: relative;
+    z-index: 2000px;
+    width: 200%;
+    height: 200%;
+    margin-right: 30%; 
+    gap: 50%;
+     margin-top: 20%; 
+}
+#imgGameOver{
+    width: 600px;
+    height: 600px; 
+}
+form {
+  position: absolute;
+  top: 4%;
+  right: 87%;
+  height: 28%;
+  width: 9%;
+  color: black;
+  background-color: rgb(255 255 255 / 64%);
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 114%;
+}
+input{
+    background-color: unset;
+    border: unset;
+    width: 50%;
+    font-size: 89%;
+}
+#name{
+ width: 72%;
+}
+#ballInBasket{
+    width: 32%;
+}
+#ballLive{
+    position: absolute;
+    font-size:  134%;
+    width: 100%;
+   
+    
+} 
+#imageBoomContainer{
+    position: absolute;
+    overflow: hidden;
+    visibility: hidden;
+    z-index: 1000;
+}
+#imgBoom{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+}
+ @media (max-width: 768px) {
+    form{
+    height: 20%;
+    }
+    .triangle{
+        width: 25px;
+        height: 35px;
+        margin: 8px;
+    }
+   
+}

@@ -1,0 +1,79 @@
+html{
+    background-image: url("../image/רקע\ מזויף.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container{
+    background-color: rgb(169 161 161 / 34%);
+    padding: 40px;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 0 20px 0px #00000080;
+    width: 500px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: black;
+    transition: transform 0.3s ease;
+    padding: 20px;
+
+}
+.bottons{
+    display: flex;
+    flex-wrap: wrap;
+}
+#login,#register{
+   border-color: transparent;
+   background-color: #ff000000;
+   padding-bottom: 5px;
+   font-size: 20px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   justify-content: space-between;
+   width: 49%;
+   color: #df70d2;
+}
+#login{
+    color: #ffffff;
+}
+.form-wrapper{
+    display: none;
+}
+.form-wrapper.active{
+    display: block;
+}
+form:hover {
+    transform: scale(1.05); 
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ecf0f1;
+    font-weight: bold; 
+}
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: border-color 0.3s ease; 
+}
+#send{
+    background-color: #df70d2;
+    color: #ecf0f1;
+    width: 50px;
+    font-size: medium;
+    justify-content: center;
+    text-align: center;
+    margin-right: 90%;
+}
