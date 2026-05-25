@@ -11,28 +11,48 @@
 
     <div id="container">
         <div id="buttons">
-          <button id="login">כניסה</button>
+          <button id="login" class="active">כניסה</button>
           <button id="register">הרשמה</button> 
         </div><hr>
-        <form id="formLogin" class="form-wrapper active">
-          <label for="username">שם משתמש(אימייל):</label><br>
-          <input type="text" id="loginUsername" name="username" required><br>
-          <label for="password">סיסמה:</label><br>
-          <input type="password" id="loginPassword" name="password" required><br><br>
-          <input type="submit" value="היכנס" id="send">
+        <form id="formLogin" class="form-wrapper active" novalidate>
+          <div class="form-field">
+            <label for="loginUsername">שם משתמש (אימייל):</label>
+            <input type="email" id="loginUsername" name="username" placeholder="you@example.com" required>
+          </div>
+          <div class="form-field">
+            <label for="loginPassword">סיסמה:</label>
+            <input type="password" id="loginPassword" name="password" placeholder="••••••••" required>
+          </div>
+          <div class="message" id="loginMessage" aria-live="polite"></div>
+          <div class="form-actions">
+            <button type="submit" class="btn-submit" id="sendLogin">היכנס</button>
+          </div>
         </form>
-        <form id="formRegister" class="form-wrapper">
-          <label for="firstName">שם פרטי:</label><br>
-          <input type="text" id="registerFirstName" name="firstName" required><br>
-          <label for="lastName">שם משפחה:</label><br>
-          <input type="text" id="registerLastName" name="lastName"><br>
-          <label for="email">אימייל:</label><br>
-          <input type="email" id="registerEmail" name="email" required><br>
-          <label for="password">סיסמא:</label><br>
-          <input type="password" id="registerPassword" name="password" required><br>
-          <label for="checkPass">אימות סיסמא:</label><br>
-          <input type="password" id="registerCheckPass" name="checkPass" required><br><br>
-          <input type="submit" value="הרשם" id="send">
+        <form id="formRegister" class="form-wrapper" novalidate>
+          <div class="form-field">
+            <label for="registerFirstName">שם פרטי:</label>
+            <input type="text" id="registerFirstName" name="firstName" placeholder="שם פרטי" required>
+          </div>
+          <div class="form-field">
+            <label for="registerLastName">שם משפחה:</label>
+            <input type="text" id="registerLastName" name="lastName" placeholder="שם משפחה">
+          </div>
+          <div class="form-field">
+            <label for="registerEmail">אימייל:</label>
+            <input type="email" id="registerEmail" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-field">
+            <label for="registerPassword">סיסמא (6+ תווים):</label>
+            <input type="password" id="registerPassword" name="password" placeholder="••••••••" required>
+          </div>
+          <div class="form-field">
+            <label for="registerCheckPass">אימות סיסמא:</label>
+            <input type="password" id="registerCheckPass" name="checkPass" placeholder="••••••••" required>
+          </div>
+          <div class="message" id="registerMessage" aria-live="polite"></div>
+          <div class="form-actions">
+            <button type="submit" class="btn-submit" id="sendRegister">הרשם</button>
+          </div>
         </form>
       
 </body>

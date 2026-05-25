@@ -1,4 +1,4 @@
-html{
+html {
     background-image: url("../image/register.jpg");
     background-size: cover;
     background-position: center;
@@ -9,71 +9,157 @@ html{
     align-items: center;
     height: 100vh;
     margin: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
-#container{
-    background-color: rgb(169 161 161 / 34%);
-    padding: 40px;
-    border-radius: 15px 15px 0 0;
-    box-shadow: 0 0 20px 0px #00000080;
-    width: 500px;
-    border-right-color: transparent;
-    border-left-color: transparent;
-    border-top-color: transparent;
-    border-bottom-color: black;
-    transition: transform 0.3s ease;
-    padding: 20px;
 
+#container {
+    background-color: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    padding: 36px 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+    width: 92%;
+    max-width: 640px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.bottons{
+
+
+#buttons{
     display: flex;
-    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1.25rem;
+    padding-bottom: 18px; 
+    position: relative;
+    align-items: center;
 }
-#login,#register{
-   border-color: transparent;
-   background-color: #ff000000;
-   padding-bottom: 5px;
-   font-size: 20px;
-   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   justify-content: space-between;
-   width: 49%;
-   color: #df70d2;
+
+#buttons button{
+    flex: 1 1 auto;
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.68);
+    font-size: 1.15rem;
+    font-weight: 800;
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: color 0.18s ease, transform 0.18s ease;
+    position: relative;
 }
-#login{
+
+#buttons button:hover{
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+
+#buttons button.active{
     color: #ffffff;
 }
+#buttons button.active::after{
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: -12px;
+    height: 4px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #ff66b3 0%, #d4009a 100%);
+    box-shadow: 0 6px 18px rgba(212, 0, 154, 0.28);
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background: rgba(255,255,255,0.06);
+    margin: 0 0 18px 0;
+}
+
+/* Form wrappers (show/hide) */
 .form-wrapper{
     display: none;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.28s ease, transform 0.28s ease;
 }
 .form-wrapper.active{
     display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
-form:hover {
-    transform: scale(1.05); 
-}
+
+.form-field{ margin-bottom: 12px; }
+
 label {
     display: block;
-    margin-bottom: 5px;
-    color: #ecf0f1;
-    font-weight: bold; 
+    margin-bottom: 6px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.98rem;
+    text-align: right;
 }
+
 input[type="text"],
 input[type="password"],
-input[type="email"]{
-    width: calc(100% - 22px);
-    padding: 12px;
-    margin-bottom: 20px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    transition: border-color 0.3s ease; 
+input[type="email"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 0;
+    border: 1px solid rgba(255,255,255,0.08);
+    background-color: rgba(255,255,255,0.03);
+    border-radius: 10px;
+    color: #eef0f6;
+    font-size: 0.98rem;
+    box-sizing: border-box;
+    transition: box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+    text-align: right;
 }
-#send{
-    background-color: #df70d2;
-    color: #ecf0f1;
-    width: 50px;
-    font-size: medium;
-    justify-content: center;
+
+input:focus{
+    outline: none;
+    background-color: rgba(255,255,255,0.045);
+    border-color: #ff1f78;
+    box-shadow: 0 8px 28px rgba(255,31,120,0.08);
+}
+
+.form-actions{ display:flex; justify-content:center; margin-top:10px; }
+
+/* Primary submit button style */
+.btn-submit{
+    background: linear-gradient(135deg, #ff1f78 0%, #b8004f 100%);
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 800;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(255,31,120,0.16);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+}
+
+.btn-submit:hover{ transform: translateY(-3px); box-shadow: 0 14px 38px rgba(255,31,120,0.22); }
+
+/* Inline message area */
+.message{
+    min-height: 1.2rem;
+    color: #ffd1e8;
+    font-size: 0.95rem;
+    margin-top: 6px;
     text-align: center;
-    margin-right: 90%;
+}
+
+/* Responsive */
+@media (max-width: 720px){
+    #container{ padding: 26px 18px; }
+    #buttons button{ font-size: 1rem; }
+}
+
+@media (max-width: 420px){
+    #game-container{ grid-template-columns: 1fr; }
+    #buttons{ gap:6px; }
+    #buttons button{ font-size: 0.95rem; padding: 8px 6px; }
 }
