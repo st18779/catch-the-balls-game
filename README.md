@@ -6,7 +6,7 @@ A fast-paced, addictive 2D browser arcade game built from scratch using HTML5, C
 
 ## 🚀 Live Demo
 Play the game directly in your browser here:  
-🔗 **[Add your GitHub Pages link here later]**
+🔗 https://st18779.github.io/catch-the-balls-game/
 
 ---
 
@@ -36,7 +36,7 @@ The goal is simple: Survive the falling ball storm and score as high as possible
 ---
 
 ## 📸 Screenshots
-<img width="2836" height="1534" alt="register" src="https://github.com/user-attachments/assets/e476b3a5-be5b-40b3-8b0b-900764793e44" />
+
 
 <img width="2804" height="1480" alt="game" src="https://github.com/user-attachments/assets/b4ba73ae-56c8-497a-b5ba-107bbad25b55" />
 
